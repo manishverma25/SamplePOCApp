@@ -1,5 +1,6 @@
 package com.manish.stockapp.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -16,6 +17,8 @@ import com.manish.stockapp.ViewModelFactory
 import com.manish.stockapp.data.Resource
 import com.manish.stockapp.data.StockDetailsApiResponse
 import com.manish.stockapp.data.StockDetailsItem
+import com.manish.stockapp.ui.base.MainActivity
+import com.manish.stockapp.ui.base.SecondActvity
 import com.manish.stockapp.util.Constants
 import com.manish.stockapp.util.extension.errorSnack
 import com.manish.stockapp.util.extension.showSnack
@@ -113,6 +116,11 @@ class HomeFragment : Fragment(), StockDetailsAdapter.OnStockItemSelectListener {
         stockDeatilsRecyclerView.layoutManager = LinearLayoutManager(activity)
         stockDetailsListAdapter = StockDetailsAdapter(this)
         setupViewModel()
+        imgVw.setOnClickListener {
+            val intent = Intent(activity, SecondActvity::class.java)
+            startActivity(intent)
+            activity?.finish()
+        }
 
     }
 

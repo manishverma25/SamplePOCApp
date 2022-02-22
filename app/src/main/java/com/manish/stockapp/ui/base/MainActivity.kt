@@ -47,7 +47,11 @@ class MainActivity : AppCompatActivity(), FirebaseAuth.AuthStateListener {
 
     }
 
-    // test comit
+
+    fun testcommit(){
+        // test comit
+    }
+
 
     fun openFragment(fragment: Fragment) {
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()

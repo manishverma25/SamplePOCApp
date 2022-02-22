@@ -12,7 +12,7 @@
         android:theme="@style/Theme.StockApp">
         <activity
             android:name=".ui.base.SecondActvity"
-            android:exported="false" >
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -14,4 +14,6 @@
     <string name="stock_favorite_success_msg">Saved in Favorite Successfully</string>
     <string name="stock_favorite_error_msg">Try Later,stock could not saved in Favorite Successfully</string>
     <string name="sign_in_error">Error while signin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
